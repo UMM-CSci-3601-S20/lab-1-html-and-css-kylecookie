@@ -55,7 +55,7 @@ this: <http://umm-csci-3601.github.io/3601-lab1_HTML-CSS/> but will not be ident
 > your team's repo on GitHub. You can remove this note when you've done these
 > things.
 
-<http://umm-csci-3601.github.io/3601-lab1_HTML-CSS/>
+https://github.com/UMM-CSci-3601-S20/lab-1-html-and-css-kylecookie
 
 ### Version Control Reminder
 
