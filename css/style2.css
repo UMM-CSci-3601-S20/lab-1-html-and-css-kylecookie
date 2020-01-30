@@ -42,7 +42,8 @@
   color: #FFDE7A;
   font-family: 'Patua One', monospace;
   text-align: center;
-  font-size: 4rem
+  font-size: 4rem;
+
 }
 
 h2 {
@@ -54,26 +55,37 @@ h2 {
   padding: 10px;
   border: 10px solid;
   margin: 10px;
-  max-width: 24em;
+  max-width: 40em;
+
 
 }
 
+.bg {
+  /* The image used */
+  background-image: src("assets/images/Dungeon.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #courses {
-  background-color: #FFDE7A;
+  background-color: orange;
   font-family: 'Marcellus', sans-serif;
 }
 
 #pslo {
-  background-color: #d5d6d2;
+  background-color: turquoise;
   font-family: 'Marcellus', sans-serif;
 }
 
 .sectionB {
 background-color: greenyellow;
-display: flex;
-flex-direction: column;
-justify-content: right;
-align-items: right;
+
 border-radius: 25px;
   padding: 20px;
   border: 5px solid;
