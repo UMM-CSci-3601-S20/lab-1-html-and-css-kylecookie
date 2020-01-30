@@ -45,7 +45,7 @@ h2 {
     font-family: 'EB Garamond', serif;
 }
 
-.section {
+.sectionA {
     border-radius: 25px;
     padding: 20px;
     border: 5px solid;
@@ -63,7 +63,7 @@ h2 {
     font-family: 'Marcellus', sans-serif;
 }
 
-.Course-Tools-Title {
+.sectionB {
   background-color: lightblue;
   display: flex;
   flex-direction: column;
