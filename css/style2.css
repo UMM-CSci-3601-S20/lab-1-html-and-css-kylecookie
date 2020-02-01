@@ -30,7 +30,7 @@
 /* Aligned the faculty container to the left of the screen in a fixed position. Scrolls with webpage. */
 .faculty-container {
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   width: 10%;
