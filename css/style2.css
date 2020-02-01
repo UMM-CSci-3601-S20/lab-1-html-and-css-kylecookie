@@ -27,15 +27,18 @@
   }
 }
 
+/* Aligned the faculty container to the left of the screen in a fixed position. Scrolls with webpage. */
 .faculty-container {
   display: flex;
+  position: fixed;
   top: 0;
   right: 0;
-  width: 15%;
+  width: 10%;
   height: 100%;
   background-color: gold;
 }
 
+/* Positions the main title above the pslo & req. courses containers */
 #main-title {
   left: left;
   padding-left: 3%;
@@ -60,13 +63,14 @@ h2 {
   right: right;
 }
 
+/* Adds a background image to the page and positions it to the right of the course/pslo containers. */
 body{
   background-image: url(../assets/images/pic4.png);
   background-repeat: no-repeat;
   background-position-x: 75.5%;
-
 }
 
+/* Aligned courses container to the left */
 #courses {
   background-color: turquoise;
   font-family: 'Marcellus', sans-serif;
@@ -77,6 +81,7 @@ body{
 
 }
 
+/* Aligned pslo container to the left */
 #pslo {
   background-color: turquoise;
   font-family: 'Marcellus', sans-serif;
@@ -87,6 +92,7 @@ body{
 
 }
 
+/* Set background color to greenyellow */
 .sectionB {
 background-color: greenyellow;
 
@@ -97,6 +103,7 @@ border-radius: 25px;
   max-width: 48em;
 }
 
+/* Set background color to greenyellow */
 .Course-Tools {
 background-color: greenyellow;
 flex-direction: column;
