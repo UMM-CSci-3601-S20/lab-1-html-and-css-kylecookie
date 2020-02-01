@@ -24,13 +24,14 @@ body {
       display: flex;
       flex-direction: row;
       max-width: 53em;
+
     }
 }
 
 .faculty-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
 }
 
@@ -56,6 +57,8 @@ h2 {
 #courses {
     background-color: #FFDE7A;
     font-family: 'Marcellus', sans-serif;
+    position: right;
+
 }
 
 #pslo {
@@ -64,11 +67,12 @@ h2 {
 }
 
 .sectionB {
+  float: right;
   background-color: lightblue;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: left;
+  justify-content: right;
+  align-items: right;
   border-radius: 25px;
     padding: 20px;
     border: 5px solid;
@@ -82,11 +86,8 @@ h2 {
   flex-direction: column;
   justify-content: left;
   align-items: left;
-  /*border-radius: 25px;
-    padding: 20px;
-    border: 5px solid;
-    margin: 10px;
-    max-width: 48em; */
+  position: right;
+
 }
 
 #faculty {

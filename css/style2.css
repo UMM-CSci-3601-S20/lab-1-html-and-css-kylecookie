@@ -38,10 +38,11 @@
 }
 
 #main-title {
-  display: flex;
-  color: goldenrod;
+  left: left;
+  padding-left: 3%;
+  color: yellowgreen;
   font-family: 'Patua One', monospace;
-  text-align: center;
+  text-align: left;
   font-size: 4rem;
 
 }
@@ -56,37 +57,36 @@ h2 {
   border: 10px solid;
   margin: 10px;
   max-width: 40em;
-
-
+  right: right;
 }
 
 body{
   background-image: url(/home/vang2660/Documents/lab-1-html-and-css-kylecookie/assets/images/pic4.png);
   background-repeat: no-repeat;
-}
+  background-position-x: 75.5%;
 
-/*
-.bg {
-
-  Full height
-  height: 100%;
-  transform: rotate(90deg);
-  object-fit: cover;
 }
-*/
 
 #courses {
-  background-color: orange;
+  background-color: turquoise;
   font-family: 'Marcellus', sans-serif;
   justify-content: right;
   align-content: right;
-  top:0;
-  right:0;
+  right: right;
+  padding-right: 17%;
+
 }
 
 #pslo {
+  /*right: right;
+  background-color: turquoise;
+  font-family: 'Marcellus', sans-serif; */
   background-color: turquoise;
   font-family: 'Marcellus', sans-serif;
+  justify-content: right;
+  align-content: right;
+  right: right;
+  padding-right: 17%;
 }
 
 .sectionB {
