@@ -1,4 +1,4 @@
-/* Adds a background image to the page and positions it to the right of the course/pslo containers. */
+/* GRADE THIS: Adds a background image that fills the page with repetition. */
 body{
   padding: 30px;
   background-color: grey;
@@ -21,7 +21,7 @@ body{
     max-width: 53em;
   }
 }
-
+/* GRADE THIS: Added the above code block to add responsiveness to the course and tools containers */
 @media screen and (min-width: 925px) {
   .courses-container {
     display: flex;
@@ -49,6 +49,7 @@ h2 {
   font-family: 'Trebuchet MS', serif;
 }
 
+/* GRADE THIS: Rounded the borders of the containers. Aligned the content to the center */
 .pslo-container {
   border: 5px solid maroon;
   border-radius: 40px 40px 40px 40px;
@@ -104,6 +105,7 @@ h2 {
 
 }
 
+/* GRADE THIS: Changed font and background color of containers */
 #pslo {
   background-color: #d5d6d2;
   font-family: 'Trebuchet MS', sans-serif;
@@ -203,6 +205,7 @@ img.pic {
   border-radius: 10px;
 }
 
+/* GRADE THIS: Added an on-click effect that pulls the button downward with a maroon background */
 #style li:active {
   box-shadow: 0 8px maroon;
   transform: translateY(4px);
