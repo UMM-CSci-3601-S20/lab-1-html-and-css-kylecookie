@@ -168,11 +168,14 @@ img.pic {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 #style li {
   float: left; /*explore what happens if this is 'right' instead*/
+  border-radius: 10px;
+  border-color: maroon;
+  border-radius: 10px;
 }
 
 #style li a {
@@ -181,11 +184,13 @@ img.pic {
   text-align: center;
   padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
   text-decoration: none;
+  border-radius: 10px;
 }
 
 /* Change the link background color to #000 (black) on hover */
 #style li a:hover {
-  background-color: #000;
+  background-color: maroon;
+  border-radius: 10px;
 }
 
 #style {
@@ -195,14 +200,13 @@ img.pic {
   top: 0;
   height: 55px;
   padding-top: 10px;
-  border-radius: 4px;
-  border: 2px transparent;
+  border-radius: 10px;
 }
 
 #style li:active {
-  background-color: #000;
   box-shadow: 0 8px maroon;
   transform: translateY(4px);
+  border-radius: 10px;
 }
 
 #validation {
