@@ -20,19 +20,27 @@ body {
  * them side-by-side.
  */
 @media screen and (min-width: 925px) {
-    .pslo-courses-container {
+    .pslo-container {
       display: flex;
       flex-direction: row;
       max-width: 53em;
-
     }
 }
 
-.faculty-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-  align-items: center;
+@media screen and (min-width: 925px) {
+  .courses-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 53em;
+  }
+}
+
+@media screen and (min-width: 925px) {
+  .tools-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 53em;
+  }
 }
 
 #main-title {
@@ -46,88 +54,94 @@ h2 {
     font-family: 'EB Garamond', serif;
 }
 
-.sectionA {
-    border-radius: 25px;
-    padding: 20px;
-    border: 5px solid;
-    margin: 10px;
-    max-width: 48em;
-
+.pslo-container {
+  border-radius: 25px;
+  padding: 20px;
+  border: 5px solid;
+  margin: 10px;
+  max-width: 48em;
 }
 
-#courses {
-    background-color: #FFDE7A;
-    font-family: 'Marcellus', sans-serif;
-    /*position: right;*/
+.tools-container {
+  border-radius: 25px;
+  padding: 20px;
+  border: 5px solid;
+  margin: 10px;
+  max-width: 48em;
+}
 
+.courses-container {
+  border-radius: 25px;
+  padding: 20px;
+  border: 5px solid;
+  margin: 10px;
+  max-width: 48em;
+}
+
+.faculty-container {
+  border-radius: 25px;
+  border: 5px solid;
+  margin: 5px;
+  max-width: 48em;
+}
+
+.validation-container {
+  border-radius: 25px;
+  border: 5px solid;
+  margin: 5px;
+  max-width: 48em;
 }
 
 #pslo {
-    background-color: #d5d6d2;
-    font-family: 'Marcellus', sans-serif;
+  background-color: #d5d6d2;
+  font-family: 'Marcellus', sans-serif;
 }
 
-.sectionB {
-  background-color: lightblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-  /*align-items: right;*/
-  border-radius: 25px;
-    padding: 20px;
-    border: 5px solid;
-    margin: 10px;
-    max-width: 48em;
+#courses {
+  background-color: #FFDE7A;
+  font-family: 'Marcellus', sans-serif;
 }
 
-.Course-Tools {
+#tools {
   background-color: lightblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  /*align-items: left;
-  position: right; */
-
+  font-family: 'Marcellus', sans-serif;
 }
 
 #faculty {
-    background-color: #f9f7f6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  background-color: orange;
+  font-family: 'Marcellus', sans-serif;
 }
 
 #faculty>ul>li {
-    display: inline-block;
-    font-family: sans-serif;
-    padding: 30px;
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 30px;
 }
 
 #faculty-list {
-    padding-left: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; /* This tell's the flex items to wrap if there
-                        isn't enough space for all of the items. Without this the
-                        faculty images will be in a row and only resize well unitl around
-                        550px width of screen. */
-    justify-content: center;
-    align-content: center;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* This tell's the flex items to wrap if there
+                      isn't enough space for all of the items. Without this the
+                      faculty images will be in a row and only resize well unitl around
+                      550px width of screen. */
+  justify-content: center;
+  align-content: center;
 }
 
 .name {
-  font-family: 'Dancing Script', cursive;
-  font-size: 2rem;
+font-family: 'Dancing Script', cursive;
+font-size: 2rem;
 }
 
 .office {
-  font-family: 'Marcellus', sans-sans-serif;;
+font-family: 'Marcellus', sans-sans-serif;;
 }
 
 img.pic {
-    width: 100%;
-    border: 4px solid #000000;
+  width: 100%;
+  border: 4px solid #000000;
 }
 
 #style ul {
@@ -139,7 +153,7 @@ img.pic {
 }
 
 #style li {
-    float: left; /*explore what happens if this is 'right' instead*/
+  float: left; /*explore what happens if this is 'right' instead*/
 }
 
 #style li a {

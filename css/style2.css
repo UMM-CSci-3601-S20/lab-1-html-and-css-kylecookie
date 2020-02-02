@@ -1,17 +1,12 @@
-/*
- * hint:
- * use # in front of the name of an id from your html page
- * use . in front of the name of a class of things from your html page
- * use , to separate a list of things that have some shared css rule
- */
-
- body {
+/* GRADE THIS: Adds a background image that fills the page with repetition. */
+body{
   padding: 30px;
-  background-color: #7A0019;
+  background-color: grey;
   display: flex; /* this is the flexbox model. It adds responsive design to its items */
   flex-direction: column; /* this says how the flex items will align (e.g. 'row') */
-  align-items: right; /* These next two properties center the flex items */
+  align-items: center; /* These next two properties center the flex items */
   justify-content: center;
+  background-image: url(../assets/images/pic4.png);
 }
 
 /*
@@ -20,102 +15,87 @@
 * them side-by-side.
 */
 @media screen and (min-width: 925px) {
-  .pslo-courses-container {
+  .pslo-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 53em;
+  }
+}
+/* GRADE THIS: Added the above code block to add responsiveness to the course and tools containers */
+@media screen and (min-width: 925px) {
+  .courses-container {
     display: flex;
     flex-direction: row;
     max-width: 53em;
   }
 }
 
-/* Aligned the faculty container to the left of the screen in a fixed position. Scrolls with webpage. */
-.faculty-container {
-  display: flex;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 10%;
-  height: 100%;
-  background-color: gold;
+@media screen and (min-width: 925px) {
+  .tools-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 53em;
+  }
 }
 
-/* Positions the main title above the pslo & req. courses containers */
 #main-title {
-  left: left;
-  padding-left: 3%;
-  color: yellowgreen;
-  font-family: 'Patua One', monospace;
+  color: #FFED7A;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: left;
+  /* Credit: https://stackoverflow.com/questions/4919076/outline-effect-to-text */
+  text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+
   font-size: 4rem;
-
-
 }
 
 h2 {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Trebuchet MS', serif;
 }
 
-.sectionA {
-  border-radius: 10px;
-  padding: 10px;
-  border: 10px solid;
-  margin: 10px;
-  max-width: 40em;
-  right: right;
-}
-
-/* Adds a background image to the page and positions it to the right of the course/pslo containers. */
-body{
-  background-image: url(../assets/images/pic4.png);
-  background-repeat: no-repeat;
-  background-position-x: 75.5%;
-}
-
-/* Aligned courses container to the left */
-#courses {
-  background-color: turquoise;
-  font-family: 'Marcellus', sans-serif;
-  justify-content: right;
-  align-content: right;
-  position: right;
-  padding-right: 17%;
-
-}
-
-/* Aligned pslo container to the left */
-#pslo {
-  background-color: turquoise;
-  font-family: 'Marcellus', sans-serif;
-  justify-content: right;
-  align-content: right;
-  right: right;
-  padding-right: 17%;
-
-}
-
-/* Set background color to greenyellow */
-.sectionB {
-background-color: greenyellow;
-border-radius: 25px;
+/* GRADE THIS: Rounded the borders of the containers. Aligned the content to the center. Made use of grouping. */
+.pslo-container, .tools-container, .courses-container, .faculty-container{
+  border: 25px solid maroon;
+  border-radius: 150px 150px 150px 150px;
   padding: 20px;
-  border: 5px solid;
+  margin: 50px;
+  max-width: 65em;
+  align-items: center;
+  justify-content: center;
+  border-style: groove;
+}
+
+.validation-container {
+  border: 5px solid maroon;
+  border-radius: 150px 150px 150px 150px;
+  padding: 20px;
   margin: 10px;
   max-width: 48em;
+  align-items: center;
+  justify-content: center;
+
 }
 
-/* Set background color to greenyellow */
-.Course-Tools {
-background-color: greenyellow;
-flex-direction: column;
-justify-content: right;
-align-items: right;
+/* GRADE THIS: Changed font and background color of containers */
+#pslo {
+  background-color: #FFED7A;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#courses {
+  background-color: #FFED7A;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#tools {
+  background-color: #FFED7A;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #faculty {
-  background-color: #f9f7f6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  text-align: center;
+  background-color: #FFED7A;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #faculty>ul>li {
@@ -137,57 +117,76 @@ align-items: right;
 }
 
 .name {
-font-family: 'Dancing Script', cursive;
-font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
 }
 
 .office {
-font-family: 'Marcellus', sans-sans-serif;;
+  font-family: 'Marcellus', sans-sans-serif;
+}
+
+.pic {
+  width: 100%;
+  border: 4px solid #000000;
+  opacity: 100%;
 }
 
 img.pic {
-  width: 75%;
+  width: 100%;
   border: 4px solid #000000;
+  opacity: 100%;
 }
+
 
 #style ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  border-radius: 10px;
 }
 
 #style li {
-  float: left; /*explore what happens if this is 'right' instead*/
+  float: right; /*explore what happens if this is 'right' instead*/
+  border-color: maroon;
+  border-radius: 10px;
 }
 
 #style li a {
   display: block;
-  color: white;
+  color: #FFED7A;
   text-align: center;
   padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
-  text-decoration: none;
+  text-decoration: rgb(red, green, blue);
+  border-radius: 10px;
 }
 
 /* Change the link background color to #000 (black) on hover */
 #style li a:hover {
-  background-color: #000;
+  background-color: maroon;
+  border-radius: 10px;
 }
 
 #style {
   position: fixed;
-  background-color: #7A0019;
   left: 0;
   right: 0;
   top: 0;
   height: 55px;
   padding-top: 10px;
+  border-radius: 10px;
+  background: maroon;
+}
+
+/* GRADE THIS: Added an on-click effect that pulls the button downward with a maroon background */
+#style li:active {
+  box-shadow: 0 8px maroon;
+  transform: translateY(4px);
+  border-radius: 10px;
 }
 
 #validation {
-font-size: 80%;
-background-color: #d5d6d2;
-padding: 50px;
-position: bottom;
+  font-size: 80%;
+  background-color: #d5d6d2;
+  padding: 25px;
 }
