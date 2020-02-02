@@ -76,23 +76,19 @@ h2 {
 
 }
 
-/* GRADE THIS: Changed font and background color of containers */
-#pslo {
-  background-color: #FFED7A;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#courses {
-  background-color: #FFED7A;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#tools {
+/* GRADE THIS: Changed font and background color of containers. Made use of grouping. */
+#pslo, #courses, #tools {
   background-color: #FFED7A;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #faculty {
+  text-align: center;
+  background-color: #FFED7A;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#faculty2 {
   text-align: center;
   background-color: #FFED7A;
   font-family: Georgia, 'Times New Roman', Times, serif;
