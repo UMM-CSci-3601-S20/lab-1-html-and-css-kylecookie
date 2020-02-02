@@ -39,64 +39,35 @@ body{
 }
 
 #main-title {
-  color: maroon;
-  font-family: 'Trebuchet MS', monospace;
+  color: #FFED7A;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: left;
-  font-size: 4rem
+  /* Credit: https://stackoverflow.com/questions/4919076/outline-effect-to-text */
+  text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+
+  font-size: 4rem;
 }
 
 h2 {
   font-family: 'Trebuchet MS', serif;
 }
 
-/* GRADE THIS: Rounded the borders of the containers. Aligned the content to the center */
-.pslo-container {
-  border: 5px solid maroon;
-  border-radius: 40px 40px 40px 40px;
+/* GRADE THIS: Rounded the borders of the containers. Aligned the content to the center. Made use of grouping. */
+.pslo-container, .tools-container, .courses-container, .faculty-container{
+  border: 25px solid maroon;
+  border-radius: 150px 150px 150px 150px;
   padding: 20px;
-  margin: 10px;
-  max-width: 48em;
+  margin: 50px;
+  max-width: 65em;
   align-items: center;
   justify-content: center;
-
-}
-
-.tools-container {
-  border: 5px solid maroon;
-  border-radius: 40px 40px 40px 40px;
-  padding: 20px;
-  margin: 10px;
-  max-width: 48em;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.courses-container {
-  border: 5px solid maroon;
-  border-radius: 40px 40px 40px 40px;
-  padding: 20px;
-  margin: 10px;
-  max-width: 48em;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.faculty-container {
-  border: 5px solid maroon;
-  border-radius: 40px 40px 40px 40px;
-  padding: 20px;
-  margin: 10px;
-  max-width: 48em;
-  align-items: center;
-  justify-content: center;
-
+  border-style: groove;
 }
 
 .validation-container {
   border: 5px solid maroon;
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 150px 150px 150px 150px;
   padding: 20px;
   margin: 10px;
   max-width: 48em;
@@ -107,23 +78,24 @@ h2 {
 
 /* GRADE THIS: Changed font and background color of containers */
 #pslo {
-  background-color: #d5d6d2;
-  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #FFED7A;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #courses {
-  background-color: #d5d6d2;
-  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #FFED7A;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #tools {
-  background-color: #d5d6d2;
-  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #FFED7A;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #faculty {
-  background-color: #d5d6d2;
-  font-family: 'Trebuchet MS', sans-serif;
+  text-align: center;
+  background-color: #FFED7A;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #faculty>ul>li {
@@ -165,6 +137,7 @@ img.pic {
   opacity: 100%;
 }
 
+
 #style ul {
   list-style-type: none;
   margin: 0;
@@ -174,17 +147,17 @@ img.pic {
 }
 
 #style li {
-  float: left; /*explore what happens if this is 'right' instead*/
+  float: right; /*explore what happens if this is 'right' instead*/
   border-color: maroon;
   border-radius: 10px;
 }
 
 #style li a {
   display: block;
-  color: white;
+  color: #FFED7A;
   text-align: center;
   padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
-  text-decoration: none;
+  text-decoration: rgb(red, green, blue);
   border-radius: 10px;
 }
 
