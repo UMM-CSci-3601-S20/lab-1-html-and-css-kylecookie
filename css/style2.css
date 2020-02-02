@@ -174,8 +174,7 @@ img.pic {
 }
 
 #style li {
-  float: left; /*explore what happens if this is 'right' instead*/
-  border-radius: 10px;
+  float: center; /*explore what happens if this is 'right' instead*/
   border-color: maroon;
   border-radius: 10px;
 }
