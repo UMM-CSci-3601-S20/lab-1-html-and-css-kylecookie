@@ -174,7 +174,7 @@ img.pic {
 }
 
 #style li {
-  float: center; /*explore what happens if this is 'right' instead*/
+  float: left; /*explore what happens if this is 'right' instead*/
   border-color: maroon;
   border-radius: 10px;
 }
@@ -202,6 +202,7 @@ img.pic {
   height: 55px;
   padding-top: 10px;
   border-radius: 10px;
+  background: maroon;
 }
 
 /* GRADE THIS: Added an on-click effect that pulls the button downward with a maroon background */
