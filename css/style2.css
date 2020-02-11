@@ -53,7 +53,8 @@ h2 {
   font-family: 'Trebuchet MS', serif;
 }
 
-/* GRADE THIS: Rounded the borders of the containers. Aligned the content to the center. Made use of grouping. */
+/* GRADE THIS: Rounded the borders of the containers. Aligned the content to the center.
+Made use of grouping via html class elements */
 .pslo-container, .tools-container, .courses-container, .faculty-container{
   border: 25px solid maroon;
   border-radius: 150px 150px 150px 150px;
@@ -76,7 +77,8 @@ h2 {
 
 }
 
-/* GRADE THIS: Changed font and background color of containers. Made use of grouping. */
+/* GRADE THIS: Used id's to override the class container CSS rules (defined above)
+ Changed font and background color of containers. An example of nesting */
 #pslo, #courses, #tools {
   background-color: #FFED7A;
   font-family: Georgia, 'Times New Roman', Times, serif;
